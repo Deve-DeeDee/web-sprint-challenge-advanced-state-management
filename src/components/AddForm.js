@@ -53,6 +53,27 @@ const AddForm = (props) => {
 
 export default AddForm;
 
+props.errorMessage && <div-testid='errorAlert' className='alert sound-the-alarm' role='alert'>Error: {props.errorMessage}</div>
+}
+<button>Add Smurf</button>
+</form>
+</section>;
+
+}
+
+const mapStateToProps = state => {
+    return {
+        errorMessage:state.error
+    }
+}
+
+const mapActionsToProps = {
+    setError,
+    addSmurf
+    }
+}
+
+
 //Task List:
 //1. Connect the errorMessage, setError and addSmurf actions to the AddForm component.
 //2. Replace all instances of the errorMessage static variable with your error message state value. 

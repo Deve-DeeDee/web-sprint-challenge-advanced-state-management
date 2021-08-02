@@ -1,5 +1,6 @@
 import React from 'react';
 import Smurf from './Smurf';
+import {Connect} from 'react-redux';
 
  const SmurfList = ()=> {
     const isLoading = false;
@@ -10,7 +11,10 @@ import Smurf from './Smurf';
         nickname: 'Pops',
         description: 'Papa is the practical village leader and the father figure of 100 or so young Smurfs. He is easily identified by his red Smurf hat, pants, and a shortly-trimmed white beard and moustache.'
     }
+const smurfList = (props) => {
+    const { smurfs, isloading } = props;
 
+}
     if (isLoading) {
         return <h1>Loading...</h1>;
     }
